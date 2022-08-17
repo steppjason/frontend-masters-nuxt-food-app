@@ -26,11 +26,13 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+
 export default {
-  computed: {
-    ...mapState(["foodData"]),
-  },
+	props: {
+		foodData: {
+			type: Array
+		}
+	},
   methods: {
     priceFormatting(item) {
       return "$" + item.toFixed(2);
