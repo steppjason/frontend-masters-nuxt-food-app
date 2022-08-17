@@ -17,7 +17,9 @@
               <h4>{{ menuitem.item }}</h4>
               <p>{{ priceFormatting(menuitem.price) }}</p>
             </div>
-            <button class="ghost">View Item</button>
+            <nuxt-link :to="`/items/${menuitem.id}`">
+              <button class="ghost">View Item</button>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -26,13 +28,12 @@
 </template>
 
 <script>
-
 export default {
-	props: {
-		foodData: {
-			type: Array
-		}
-	},
+  props: {
+    foodData: {
+      type: Array,
+    },
+  },
   methods: {
     priceFormatting(item) {
       return "$" + item.toFixed(2);
