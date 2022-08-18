@@ -1,13 +1,13 @@
 <template>
   <div>
-    <label for="select">What {{ select }} do you like?</label>
-
-    <select @change="$emit('change', $event.target.value)" name="select" id="select">
-      <option value>--Please select a {{ select }}</option>
-      <option v-for="option in selectOptions" :key="option" :value="option">
-        {{ option }}
-      </option>
-    </select>
+    <label for="select">
+			<select @change="$emit('change', $event.target.value)" name="select" id="select">
+				<option value>--Please select a {{ select }}</option>
+				<option v-for="option in selectOptions" :key="option" :value="option">
+					{{ option }}
+				</option>
+			</select>
+		</label>
   </div>
 </template>
 

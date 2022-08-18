@@ -262,14 +262,14 @@ table th {
   border-radius: 1000px;
   background: white;
   color: black;
-  top: 9px;
-  right: 33px;
-  width: 25px;
+  top: 25px;
+  right: 29px;
+  width: 5px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  height: 13px;
   font-size: 10px;
   padding: 6px 10px;
   font-weight: bold;
@@ -298,9 +298,10 @@ table th {
 
 .restaurant {
   .restaurantheading {
-    margin: 100px 0 20px 200px;
+    margin: 100px 200px 20px 200px;
     display: flex;
     align-items: center;
+		justify-content: space-between;
   }
 
   h1 {
@@ -356,4 +357,6 @@ section.restaurantinfo {
     text-align: center;
     line-height: 2;
   }
+
+	
 }
